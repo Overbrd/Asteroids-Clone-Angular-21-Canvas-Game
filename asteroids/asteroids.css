@@ -1,0 +1,74 @@
+/* Hide global header/nav */
+.header,
+.layout-header,
+.site-header,
+.global-header,
+app-header,
+app-top-nav,
+nav,
+header {
+  display: none !important;
+}
+
+/* Hide global footer */
+footer,
+app-footer {
+  display: none !important;
+}
+
+/* Full-screen game area when asteroids mode is active */
+body.asteroids-mode {
+  margin: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+body.asteroids-mode main {
+  padding-top: 0 !important;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Component host fills viewport */
+:host {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: #000;
+}
+
+/* Full-screen canvas */
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.bottom-startover {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 22px;
+  font-size: 16px;
+  font-family: "Courier New", monospace;
+  background: #d8d8d8;
+  border: 2px solid #555;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #444;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.bottom-startover:hover {
+  background: #cfcfcf;
+}
+
+.bottom-startover:active {
+  box-shadow: 0 1px 0 #444;
+  transform: translateX(-50%) translateY(1px);
+}
+
+  
